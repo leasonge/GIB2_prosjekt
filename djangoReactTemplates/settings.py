@@ -55,7 +55,7 @@ MIDDLEWARE = [
 # Allow all origins NB: testing ONLY!
 CORS_ALLOW_ALL_ORIGINS = True
 
-ROOT_URLCONF = "project.urls"
+ROOT_URLCONF = "djangoReactTemplates.urls"
 
 TEMPLATES = [
     {
@@ -73,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "project.wsgi.application"
+WSGI_APPLICATION = "djangoReactTemplates.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
