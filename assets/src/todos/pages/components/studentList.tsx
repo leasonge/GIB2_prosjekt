@@ -25,7 +25,7 @@ const NamesList = () => {
 
     return (    
         <div>
-            <h2>Student assigned  to course</h2>
+            <h2>Students assigned  to course</h2>
             <ul>
                 {students.map((student, index) => (
             <li key={index}>{student.name}</li>
