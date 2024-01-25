@@ -2,7 +2,7 @@
 Example repo for students in TBA4245
 
 -----------------------------------------------------------------------------
-
+**Acknowledgements:** This page was made with the template of Nikita Kozlov  
 Demo for this article - https://dev.to/kozlovzxc/django-templates-with-react-4hko
 
 ## Installation
