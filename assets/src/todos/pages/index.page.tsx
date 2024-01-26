@@ -25,7 +25,7 @@ const TodosIndexPage = memo(() => {
             This web page has simple functionality (see the "student to sign up"  functionality below) to read/write to the postgres database instance running on the server.
             <br/>
             <br/>
-            Please note that this application is only for demo-purposes. The repo is available at <a href="https://github.com/Lauvsnes1/react-django-example/tree/main" > this github repo</a>. You can use this github repo as inspiration and a guide on how you connect 
+            Please note that this application is only for demo-purposes. The repo is available at <a href="https://github.com/Lauvsnes1/react-django-example/tree/main" > this github repo</a>. You can use it as inspiration and a guide on how you connect 
             to the server and r/w to the database, but I strongly encourage you to build the application yourselves, as the learning outcome is much higher. Remember that a thourogh guide on connecting to the geomatics server is available on blackboard too.
             <br/>
             <br/>

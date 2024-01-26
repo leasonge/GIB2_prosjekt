@@ -614,7 +614,7 @@ const TodosIndexPage = /*#__PURE__*/ _s(_react.memo(_c = _s(()=>{
                         lineNumber: 28,
                         columnNumber: 99
                     }, undefined),
-                    ". You can use this github repo as inspiration and a guide on how you connect to the server and r/w to the database, but I strongly encourage you to build the application yourselves, as the learning outcome is much higher. Remember that a thourogh guide on connecting to the geomatics server is available on blackboard too.",
+                    ". You can use it as inspiration and a guide on how you connect to the server and r/w to the database, but I strongly encourage you to build the application yourselves, as the learning outcome is much higher. Remember that a thourogh guide on connecting to the geomatics server is available on blackboard too.",
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("br", {
                     }, void 0, false, {
                         fileName: "src/todos/pages/index.page.tsx",
