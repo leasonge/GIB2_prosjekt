@@ -24,7 +24,7 @@ SECRET_KEY = "django-insecure-4&894^wusrouqpkt2@d9j&4me!skiqp6ony*1^i^4wei0p4k@%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["geomatikk.ibm.ntnu.no", "localhost"]
+ALLOWED_HOSTS = ["geomatikk.ibm.ntnu.no", "localhost", "127.0.0.1"]
 
 # Application definition
 
