@@ -3,6 +3,8 @@ import { usePageContext } from "../../utils/usePageContext";
 import PostButton from "./components/postButton";
 import NamesList from "./components/studentList";
 import Map from "./components/mapboxgl";
+import Header from "./components/Header/Header";
+
 
 
 interface Todo {
@@ -15,11 +17,16 @@ const TodosIndexPage = memo(() => {
     let todos = pageContext?.todos
 
     return (
-
+        <>
+        <Header/>
+        
         <div style={{ display: "flex", justifyContent: "center", flexDirection: 'column', alignItems: 'center' }}>
+            
+
             <h1>Veien til sporet</h1>
             <h2>VM i 2025</h2>
-            <Map />
+            
+            
             <p style={{ paddingLeft: '20%', paddingRight: '20%', fontFamily: 'times new roman' }}>
                 <h3>Welcome to the semester project in GIB2, hope you are ready to get creative and make something fun!</h3>
                 <br />
@@ -43,6 +50,7 @@ const TodosIndexPage = memo(() => {
             <PostButton />
             <NamesList />
         </div>
+        </>
     )
 })
 

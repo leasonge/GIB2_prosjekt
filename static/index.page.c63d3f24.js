@@ -546,162 +546,181 @@ var _postButton = require("./components/postButton");
 var _postButtonDefault = parcelHelpers.interopDefault(_postButton);
 var _studentList = require("./components/studentList");
 var _studentListDefault = parcelHelpers.interopDefault(_studentList);
+var _header = require("./components/Header/Header");
+var _headerDefault = parcelHelpers.interopDefault(_header);
 var _s = $RefreshSig$();
 const TodosIndexPage = /*#__PURE__*/ _s(_react.memo(_c = _s(()=>{
     _s();
     let pageContext = _usePageContext.usePageContext();
     let todos = pageContext?.todos;
-    return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-        style: {
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: 'column',
-            alignItems: 'center'
-        },
+    return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_jsxDevRuntime.Fragment, {
         children: [
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h1", {
-                children: "Hello students in TBA4245"
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_headerDefault.default, {
             }, void 0, false, {
                 fileName: "src/todos/pages/index.page.tsx",
-                lineNumber: 19,
+                lineNumber: 21,
                 columnNumber: 9
             }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                 style: {
-                    paddingLeft: '20%',
-                    paddingRight: '20%',
-                    fontFamily: 'sans-serif'
+                    display: "flex",
+                    justifyContent: "center",
+                    flexDirection: 'column',
+                    alignItems: 'center'
                 },
                 children: [
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h3", {
-                        children: "Welcome to the semester project in GIB2, hope you are ready to get creative and make something fun!"
-                    }, void 0, false, {
-                        fileName: "src/todos/pages/index.page.tsx",
-                        lineNumber: 21,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("br", {
-                    }, void 0, false, {
-                        fileName: "src/todos/pages/index.page.tsx",
-                        lineNumber: 22,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("br", {
-                    }, void 0, false, {
-                        fileName: "src/todos/pages/index.page.tsx",
-                        lineNumber: 23,
-                        columnNumber: 13
-                    }, undefined),
-                    "This Web page was set up as a demo on the Ubuntu server. It was built with a django backend and a react frontend, but note that you are free to choose whatever technology you prefer. This web page has simple functionality (see the \"student to sign up\"  functionality below) to read/write to the postgres database instance running on the server.",
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("br", {
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h1", {
+                        children: "Veien til sporet"
                     }, void 0, false, {
                         fileName: "src/todos/pages/index.page.tsx",
                         lineNumber: 26,
                         columnNumber: 13
                     }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("br", {
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h2", {
+                        children: "VM i 2025"
                     }, void 0, false, {
                         fileName: "src/todos/pages/index.page.tsx",
                         lineNumber: 27,
                         columnNumber: 13
                     }, undefined),
-                    "Please note that this application is only for demo-purposes. The repo is available at ",
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
-                        href: "https://github.com/Lauvsnes1/react-django-example/tree/main",
-                        children: " this github repo"
-                    }, void 0, false, {
-                        fileName: "src/todos/pages/index.page.tsx",
-                        lineNumber: 28,
-                        columnNumber: 99
-                    }, undefined),
-                    ". You can use it as inspiration and a guide on how you connect to the server and r/w to the database, but I strongly encourage you to build the application yourselves, as the learning outcome is much higher. Remember that a thourogh guide on connecting to the geomatics server is available on blackboard too.",
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("br", {
-                    }, void 0, false, {
-                        fileName: "src/todos/pages/index.page.tsx",
-                        lineNumber: 30,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("br", {
-                    }, void 0, false, {
-                        fileName: "src/todos/pages/index.page.tsx",
-                        lineNumber: 31,
-                        columnNumber: 13
-                    }, undefined),
-                    "If you need help you can come to me in the student assistent hours at room L11 on fridays from 12:15 - 14:00 (as long as nothing else is written on blackboard) or email me on evenlau@stud.ntnu.no.",
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("br", {
-                    }, void 0, false, {
-                        fileName: "src/todos/pages/index.page.tsx",
-                        lineNumber: 33,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("br", {
-                    }, void 0, false, {
-                        fileName: "src/todos/pages/index.page.tsx",
-                        lineNumber: 34,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
                         style: {
-                            fontWeight: "bold"
-                        },
-                        children: " Acknowledment:"
-                    }, void 0, false, {
-                        fileName: "src/todos/pages/index.page.tsx",
-                        lineNumber: 35,
-                        columnNumber: 13
-                    }, undefined),
-                    " This application was built with the react-django template of Nikita Kozlov. See more ",
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
-                        href: "https://github.com/kozlovzxc/djangoReactTemplates",
-                        children: " here."
-                    }, void 0, false, {
-                        fileName: "src/todos/pages/index.page.tsx",
-                        lineNumber: 35,
-                        columnNumber: 156
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
-                        style: {
-                            fontWeight: 'bold'
+                            paddingLeft: '20%',
+                            paddingRight: '20%',
+                            fontFamily: 'times new roman'
                         },
                         children: [
+                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h3", {
+                                children: "Welcome to the semester project in GIB2, hope you are ready to get creative and make something fun!"
+                            }, void 0, false, {
+                                fileName: "src/todos/pages/index.page.tsx",
+                                lineNumber: 31,
+                                columnNumber: 17
+                            }, undefined),
+                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("br", {
+                            }, void 0, false, {
+                                fileName: "src/todos/pages/index.page.tsx",
+                                lineNumber: 32,
+                                columnNumber: 17
+                            }, undefined),
+                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("br", {
+                            }, void 0, false, {
+                                fileName: "src/todos/pages/index.page.tsx",
+                                lineNumber: 33,
+                                columnNumber: 17
+                            }, undefined),
+                            "This Web page was set up as a demo on the Ubuntu server. It was built with a django backend and a react frontend, but note that you are free to choose whatever technology you prefer. This web page has simple functionality (see the \"student to sign up\"  functionality below) to read/write to the postgres database instance running on the server.",
+                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("br", {
+                            }, void 0, false, {
+                                fileName: "src/todos/pages/index.page.tsx",
+                                lineNumber: 36,
+                                columnNumber: 17
+                            }, undefined),
                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("br", {
                             }, void 0, false, {
                                 fileName: "src/todos/pages/index.page.tsx",
                                 lineNumber: 37,
-                                columnNumber: 13
+                                columnNumber: 17
                             }, undefined),
-                            "NB:"
+                            "Please note that this application is only for demo-purposes. The repo is available at ",
+                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
+                                href: "https://github.com/Lauvsnes1/react-django-example/tree/main",
+                                children: " this github repo"
+                            }, void 0, false, {
+                                fileName: "src/todos/pages/index.page.tsx",
+                                lineNumber: 38,
+                                columnNumber: 103
+                            }, undefined),
+                            ". You can use it as inspiration and a guide on how you connect to the server and r/w to the database, but I strongly encourage you to build the application yourselves, as the learning outcome is much higher. Remember that a thourogh guide on connecting to the geomatics server is available on blackboard too.",
+                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("br", {
+                            }, void 0, false, {
+                                fileName: "src/todos/pages/index.page.tsx",
+                                lineNumber: 40,
+                                columnNumber: 17
+                            }, undefined),
+                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("br", {
+                            }, void 0, false, {
+                                fileName: "src/todos/pages/index.page.tsx",
+                                lineNumber: 41,
+                                columnNumber: 17
+                            }, undefined),
+                            "If you need help you can come to me in the student assistent hours at room L11 on fridays from 12:15 - 14:00 (as long as nothing else is written on blackboard) or email me on evenlau@stud.ntnu.no.",
+                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("br", {
+                            }, void 0, false, {
+                                fileName: "src/todos/pages/index.page.tsx",
+                                lineNumber: 43,
+                                columnNumber: 17
+                            }, undefined),
+                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("br", {
+                            }, void 0, false, {
+                                fileName: "src/todos/pages/index.page.tsx",
+                                lineNumber: 44,
+                                columnNumber: 17
+                            }, undefined),
+                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                                style: {
+                                    fontWeight: "bold"
+                                },
+                                children: " Acknowledment:"
+                            }, void 0, false, {
+                                fileName: "src/todos/pages/index.page.tsx",
+                                lineNumber: 45,
+                                columnNumber: 17
+                            }, undefined),
+                            " This application was built with the react-django template of Nikita Kozlov. See more ",
+                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
+                                href: "https://github.com/kozlovzxc/djangoReactTemplates",
+                                children: " here."
+                            }, void 0, false, {
+                                fileName: "src/todos/pages/index.page.tsx",
+                                lineNumber: 45,
+                                columnNumber: 162
+                            }, undefined),
+                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                                style: {
+                                    fontWeight: 'bold'
+                                },
+                                children: [
+                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("br", {
+                                    }, void 0, false, {
+                                        fileName: "src/todos/pages/index.page.tsx",
+                                        lineNumber: 47,
+                                        columnNumber: 21
+                                    }, undefined),
+                                    "NB:"
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/todos/pages/index.page.tsx",
+                                lineNumber: 46,
+                                columnNumber: 17
+                            }, undefined),
+                            " it is possible to omit the use of pipenv as used in the article."
                         ]
                     }, void 0, true, {
                         fileName: "src/todos/pages/index.page.tsx",
-                        lineNumber: 36,
+                        lineNumber: 30,
                         columnNumber: 13
                     }, undefined),
-                    " it is possible to omit the use of pipenv as used in the article."
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_postButtonDefault.default, {
+                    }, void 0, false, {
+                        fileName: "src/todos/pages/index.page.tsx",
+                        lineNumber: 50,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_studentListDefault.default, {
+                    }, void 0, false, {
+                        fileName: "src/todos/pages/index.page.tsx",
+                        lineNumber: 51,
+                        columnNumber: 13
+                    }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/todos/pages/index.page.tsx",
-                lineNumber: 20,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_postButtonDefault.default, {
-            }, void 0, false, {
-                fileName: "src/todos/pages/index.page.tsx",
-                lineNumber: 40,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_studentListDefault.default, {
-            }, void 0, false, {
-                fileName: "src/todos/pages/index.page.tsx",
-                lineNumber: 41,
+                lineNumber: 23,
                 columnNumber: 9
             }, undefined)
         ]
-    }, void 0, true, {
-        fileName: "src/todos/pages/index.page.tsx",
-        lineNumber: 18,
-        columnNumber: 5
-    }, undefined));
+    }, void 0, true));
 }, "L5OSmYt+PTTodSfV7Ze+VkSH618=", false, function() {
     return [
         _usePageContext.usePageContext
@@ -722,7 +741,7 @@ $RefreshReg$(_c1, "TodosIndexPage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../utils/usePageContext":"fvYni","./components/postButton":"dvwzY","./components/studentList":"fOhmb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fvYni":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../utils/usePageContext":"fvYni","./components/postButton":"dvwzY","./components/studentList":"fOhmb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Header/Header":"b8k2t"}],"fvYni":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$7ed8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -908,6 +927,94 @@ $RefreshReg$(_c, "NamesList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["kn9T2","e0RYL"], null, "parcelRequiree635")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"b8k2t":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0394 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0394.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _headerstylesCss = require("./headerstyles.css");
+function Header() {
+    return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("header", {
+        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("nav", {
+            className: "nav",
+            children: [
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
+                    href: "/",
+                    className: "logo",
+                    style: {
+                        fontSize: '40px'
+                    },
+                    children: "Veien til sporet"
+                }, void 0, false, {
+                    fileName: "src/todos/pages/components/Header/Header.tsx",
+                    lineNumber: 10,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("ul", {
+                    children: [
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
+                            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
+                                href: "/routs",
+                                children: "Reiseruter"
+                            }, void 0, false, {
+                                fileName: "src/todos/pages/components/Header/Header.tsx",
+                                lineNumber: 13,
+                                columnNumber: 25
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "src/todos/pages/components/Header/Header.tsx",
+                            lineNumber: 12,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
+                            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
+                                href: "/favorittes",
+                                children: "Favoritter"
+                            }, void 0, false, {
+                                fileName: "src/todos/pages/components/Header/Header.tsx",
+                                lineNumber: 16,
+                                columnNumber: 25
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "src/todos/pages/components/Header/Header.tsx",
+                            lineNumber: 15,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/todos/pages/components/Header/Header.tsx",
+                    lineNumber: 11,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/todos/pages/components/Header/Header.tsx",
+            lineNumber: 9,
+            columnNumber: 13
+        }, this)
+    }, void 0, false, {
+        fileName: "src/todos/pages/components/Header/Header.tsx",
+        lineNumber: 8,
+        columnNumber: 9
+    }, this));
+}
+exports.default = Header;
+_c = Header;
+var _c;
+$RefreshReg$(_c, "Header");
+
+  $parcel$ReactRefreshHelpers$0394.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./headerstyles.css":"7vMko"}],"7vMko":[function() {},{}]},["kn9T2","e0RYL"], null, "parcelRequiree635")
 
 //# sourceMappingURL=index.page.c63d3f24.js.map

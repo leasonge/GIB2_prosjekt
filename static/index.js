@@ -1009,10 +1009,10 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactDom = require("react-dom");
 var _reactDomDefault = parcelHelpers.interopDefault(_reactDom);
-let App = /*#__PURE__*/ _reactDefault.default.lazy(_c = ()=>require("b559e5d12e004e8f")
+let App = /*#__PURE__*/ _reactDefault.default.lazy(_c = ()=>require("9358b3985808eb1b")
 );
 _c1 = App;
-let TodosIndexPage = /*#__PURE__*/ _reactDefault.default.lazy(_c2 = ()=>require("22c8b36c657f18e0")
+let TodosIndexPage = /*#__PURE__*/ _reactDefault.default.lazy(_c2 = ()=>require("403e0423b5b8656b")
 );
 _c3 = TodosIndexPage;
 let declarePage = (id, Content)=>{
@@ -1023,12 +1023,12 @@ let declarePage = (id, Content)=>{
             children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(Content, {
             }, void 0, false, {
                 fileName: "src/index.tsx",
-                lineNumber: 9,
+                lineNumber: 11,
                 columnNumber: 52
             }, undefined)
         }, void 0, false, {
             fileName: "src/index.tsx",
-            lineNumber: 9,
+            lineNumber: 11,
             columnNumber: 25
         }, undefined), document.getElementById(id));
     } catch (e) {
@@ -1048,7 +1048,7 @@ $RefreshReg$(_c3, "TodosIndexPage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","b559e5d12e004e8f":"6ryA9","22c8b36c657f18e0":"j3Xid","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","403e0423b5b8656b":"6r6RV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","9358b3985808eb1b":"6ryA9"}],"iTorj":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/react-jsx-dev-runtime.development.js');
 
@@ -22794,42 +22794,45 @@ module.exports = require('./cjs/scheduler-tracing.development.js');
     exports.unstable_wrap = unstable_wrap;
 })();
 
-},{}],"6ryA9":[function(require,module,exports) {
-module.exports = require("./helpers/browser/js-loader")(require('./helpers/bundle-url').getBundleURL('6EXJA') + "app.303574b1.js" + "?" + Date.now()).catch((err)=>{
-    delete module.bundle.cache[module.id];
-    throw err;
-}).then(()=>module.bundle.root('41oNQ')
+},{}],"6r6RV":[function(require,module,exports) {
+module.exports = Promise.all([
+    require("./helpers/browser/css-loader")(require('./helpers/bundle-url').getBundleURL('6EXJA') + "index.page.7483f4d0.css" + "?" + Date.now()).catch((err)=>{
+        delete module.bundle.cache[module.id];
+        throw err;
+    }),
+    require("./helpers/browser/js-loader")(require('./helpers/bundle-url').getBundleURL('6EXJA') + "index.page.c63d3f24.js" + "?" + Date.now()).catch((err)=>{
+        delete module.bundle.cache[module.id];
+        throw err;
+    })
+]).then(()=>module.bundle.root('18BF5')
 );
 
-},{"./helpers/browser/js-loader":"61B45","./helpers/bundle-url":"lgJ39"}],"61B45":[function(require,module,exports) {
+},{"./helpers/browser/css-loader":"1MWPE","./helpers/bundle-url":"lgJ39","./helpers/browser/js-loader":"61B45"}],"1MWPE":[function(require,module,exports) {
 "use strict";
 var cacheLoader = require('../cacheLoader');
 module.exports = cacheLoader(function(bundle) {
     return new Promise(function(resolve, reject) {
-        // Don't insert the same script twice (e.g. if it was already in the HTML)
-        var existingScripts = document.getElementsByTagName('script');
-        if ([].concat(existingScripts).some(function isCurrentBundle(script) {
-            return script.src === bundle;
+        // Don't insert the same link element twice (e.g. if it was already in the HTML)
+        var existingLinks = document.getElementsByTagName('link');
+        if ([].concat(existingLinks).some(function isCurrentBundle(link) {
+            return link.href === bundle && link.rel.indexOf('stylesheet') > -1;
         })) {
             resolve();
             return;
         }
-        var script1 = document.createElement('script');
-        script1.async = true;
-        script1.type = 'text/javascript';
-        script1.charset = 'utf-8';
-        script1.src = bundle;
-        script1.onerror = function(e) {
-            var error = new TypeError("Failed to fetch dynamically imported module: ".concat(bundle, ". Error: ").concat(e.message));
-            script1.onerror = script1.onload = null;
-            script1.remove();
-            reject(error);
+        var link1 = document.createElement('link');
+        link1.rel = 'stylesheet';
+        link1.href = bundle;
+        link1.onerror = function(e) {
+            link1.onerror = link1.onload = null;
+            link1.remove();
+            reject(e);
         };
-        script1.onload = function() {
-            script1.onerror = script1.onload = null;
+        link1.onload = function() {
+            link1.onerror = link1.onload = null;
             resolve();
         };
-        document.getElementsByTagName('head')[0].appendChild(script1);
+        document.getElementsByTagName('head')[0].appendChild(link1);
     });
 });
 
@@ -22897,14 +22900,39 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"j3Xid":[function(require,module,exports) {
-module.exports = require("./helpers/browser/js-loader")(require('./helpers/bundle-url').getBundleURL('6EXJA') + "index.page.c63d3f24.js" + "?" + Date.now()).catch((err)=>{
-    delete module.bundle.cache[module.id];
-    throw err;
-}).then(()=>module.bundle.root('18BF5')
-);
+},{}],"61B45":[function(require,module,exports) {
+"use strict";
+var cacheLoader = require('../cacheLoader');
+module.exports = cacheLoader(function(bundle) {
+    return new Promise(function(resolve, reject) {
+        // Don't insert the same script twice (e.g. if it was already in the HTML)
+        var existingScripts = document.getElementsByTagName('script');
+        if ([].concat(existingScripts).some(function isCurrentBundle(script) {
+            return script.src === bundle;
+        })) {
+            resolve();
+            return;
+        }
+        var script1 = document.createElement('script');
+        script1.async = true;
+        script1.type = 'text/javascript';
+        script1.charset = 'utf-8';
+        script1.src = bundle;
+        script1.onerror = function(e) {
+            var error = new TypeError("Failed to fetch dynamically imported module: ".concat(bundle, ". Error: ").concat(e.message));
+            script1.onerror = script1.onload = null;
+            script1.remove();
+            reject(error);
+        };
+        script1.onload = function() {
+            script1.onerror = script1.onload = null;
+            resolve();
+        };
+        document.getElementsByTagName('head')[0].appendChild(script1);
+    });
+});
 
-},{"./helpers/browser/js-loader":"61B45","./helpers/bundle-url":"lgJ39"}],"gkKU3":[function(require,module,exports) {
+},{"../cacheLoader":"j49pS"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -23054,6 +23082,13 @@ function registerExportsForReactRefresh(module) {
     }
 }
 
-},{"react-refresh/runtime":"786KC"}]},["kn9T2","8IxgD","4aBH6"], "4aBH6", "parcelRequiree635")
+},{"react-refresh/runtime":"786KC"}],"6ryA9":[function(require,module,exports) {
+module.exports = require("./helpers/browser/js-loader")(require('./helpers/bundle-url').getBundleURL('6EXJA') + "app.303574b1.js" + "?" + Date.now()).catch((err)=>{
+    delete module.bundle.cache[module.id];
+    throw err;
+}).then(()=>module.bundle.root('41oNQ')
+);
+
+},{"./helpers/browser/js-loader":"61B45","./helpers/bundle-url":"lgJ39"}]},["kn9T2","8IxgD","4aBH6"], "4aBH6", "parcelRequiree635")
 
 //# sourceMappingURL=index.js.map
