@@ -1,0 +1,8 @@
+.body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-Items: center;
+  height: 700px;
+  background-color: #6364D5;
+}
