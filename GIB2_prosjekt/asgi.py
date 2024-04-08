@@ -1,5 +1,5 @@
 """
-ASGI config for djangoReactTemplates project.
+ASGI config for GIB2_prosjekt project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "djangoReactTemplates.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "GIB2_prosjekt.settings")
 
 application = get_asgi_application()

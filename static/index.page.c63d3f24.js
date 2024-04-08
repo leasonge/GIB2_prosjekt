@@ -652,7 +652,7 @@ const TodosIndexPage = /*#__PURE__*/ _s(_react.memo(_c = _s(()=>{
                     }, undefined),
                     " This application was built with the react-django template of Nikita Kozlov. See more ",
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
-                        href: "https://github.com/kozlovzxc/djangoReactTemplates",
+                        href: "https://github.com/kozlovzxc/GIB2_prosjekt",
                         children: " here."
                     }, void 0, false, {
                         fileName: "src/todos/pages/index.page.tsx",
