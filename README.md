@@ -46,3 +46,11 @@ Second terminal tab:
 ```shell
 pipenv run python manage.py runserver
 ```
+
+Når noe kræsjer ved store oppdateringer
+terminal:
+```shell
+python manage.py collectstatic
+```
+
+start opp nettsiden på nytt. 

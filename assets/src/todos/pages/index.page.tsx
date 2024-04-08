@@ -2,7 +2,9 @@ import React, { memo } from "react";
 import { usePageContext } from "../../utils/usePageContext";
 import PostButton from "./components/postButton";
 import NamesList from "./components/studentList";
-import Map from "./components/mapboxgl";
+// import Map from "./components/mapboxgl";
+import Footer from "./components/footer/footer";
+// import './components/index.css';
 
 
 interface Todo {
@@ -16,11 +18,11 @@ const TodosIndexPage = memo(() => {
 
     return (
 
-        <div style={{ display: "flex", justifyContent: "center", flexDirection: 'column', alignItems: 'center' }}>
+        <div className="body">
             <h1>Veien til sporet</h1>
             <h2>VM i 2025</h2>
-            <Map />
-            <p style={{ paddingLeft: '20%', paddingRight: '20%', fontFamily: 'times new roman' }}>
+            {/* <Map /> */}
+            {/* <p style={{ paddingLeft: '20%', paddingRight: '20%', fontFamily: 'times new roman' }}>
                 <h3>Welcome to the semester project in GIB2, hope you are ready to get creative and make something fun!</h3>
                 <br />
                 <br />
@@ -39,10 +41,12 @@ const TodosIndexPage = memo(() => {
                 <span style={{ fontWeight: 'bold' }}>
                     <br />
                     NB:</span> it is possible to omit the use of pipenv as used in the article.
-            </p>
+            </p> */}
             <PostButton />
             <NamesList />
+            <Footer />
         </div>
+
     )
 })
 
