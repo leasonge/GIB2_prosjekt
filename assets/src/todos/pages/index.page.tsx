@@ -49,7 +49,7 @@ const TodosIndexPage = memo(() => {
             <NamesList />
             <Footer />
         </div>
-        </>
+
     )
 })
 
