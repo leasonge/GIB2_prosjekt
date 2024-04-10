@@ -3,7 +3,8 @@ import { usePageContext } from "../../utils/usePageContext";
 import PostButton from "./components/postButton";
 import NamesList from "./components/studentList";
 import Map from "./components/mapboxgl";
-import Header from "./components/Header/Header";
+import Header from "./components/Header/Header"
+
 
 
 
@@ -19,7 +20,7 @@ const TodosIndexPage = memo(() => {
     return (
         <>
         <Header/>
-        
+       
         <div style={{ display: "flex", justifyContent: "center", flexDirection: 'column', alignItems: 'center' }}>
             
 
