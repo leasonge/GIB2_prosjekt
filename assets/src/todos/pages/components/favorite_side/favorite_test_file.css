@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+.favoriteCardStyle {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 70%;
+    height: 50px;
+    background-color: rgba(242, 240, 240, 1);
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.6em;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.with-button {
+    position: relative;
+}
+
+
