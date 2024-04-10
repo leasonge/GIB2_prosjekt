@@ -2,10 +2,12 @@ import React, { memo } from "react";
 import { usePageContext } from "../../utils/usePageContext";
 import PostButton from "./components/postButton";
 import NamesList from "./components/studentList";
-import Map from "./components/mapboxgl";
+// import Map from "./components/mapboxgl";
 import Header from "./components/Header/Header"
 
 
+import Footer from "./components/footer/footer";
+// import './components/index.css';
 
 
 interface Todo {
@@ -18,17 +20,12 @@ const TodosIndexPage = memo(() => {
     let todos = pageContext?.todos
 
     return (
-        <>
-        <Header/>
-       
-        <div style={{ display: "flex", justifyContent: "center", flexDirection: 'column', alignItems: 'center' }}>
-            
 
+        <div className="body">
             <h1>Veien til sporet</h1>
             <h2>VM i 2025</h2>
-            
-            
-            <p style={{ paddingLeft: '20%', paddingRight: '20%', fontFamily: 'times new roman' }}>
+            {/* <Map /> */}
+            {/* <p style={{ paddingLeft: '20%', paddingRight: '20%', fontFamily: 'times new roman' }}>
                 <h3>Welcome to the semester project in GIB2, hope you are ready to get creative and make something fun!</h3>
                 <br />
                 <br />
@@ -43,13 +40,14 @@ const TodosIndexPage = memo(() => {
                 If you need help you can come to me in the student assistent hours at room L11 on fridays from 12:15 - 14:00 (as long as nothing else is written on blackboard) or email me on evenlau@stud.ntnu.no.
                 <br />
                 <br />
-                <span style={{ fontWeight: "bold" }}> Acknowledment:</span> This application was built with the react-django template of Nikita Kozlov. See more <a href="https://github.com/kozlovzxc/djangoReactTemplates"> here.</a>
+                <span style={{ fontWeight: "bold" }}> Acknowledment:</span> This application was built with the react-django template of Nikita Kozlov. See more <a href="https://github.com/kozlovzxc/GIB2_prosjekt"> here.</a>
                 <span style={{ fontWeight: 'bold' }}>
                     <br />
                     NB:</span> it is possible to omit the use of pipenv as used in the article.
-            </p>
+            </p> */}
             <PostButton />
             <NamesList />
+            <Footer />
         </div>
         </>
     )

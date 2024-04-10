@@ -1,8 +1,6 @@
 import React, {LazyExoticComponent, Suspense} from 'react';
 import ReactDOM from "react-dom";
 
-
-
 let App = React.lazy(() => import('./app'))
 let TodosIndexPage = React.lazy(() => import('./todos/pages/index.page'))
 
