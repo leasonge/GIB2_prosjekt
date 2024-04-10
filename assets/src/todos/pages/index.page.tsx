@@ -37,7 +37,7 @@ const TodosIndexPage = memo(() => {
                 If you need help you can come to me in the student assistent hours at room L11 on fridays from 12:15 - 14:00 (as long as nothing else is written on blackboard) or email me on evenlau@stud.ntnu.no.
                 <br />
                 <br />
-                <span style={{ fontWeight: "bold" }}> Acknowledment:</span> This application was built with the react-django template of Nikita Kozlov. See more <a href="https://github.com/kozlovzxc/djangoReactTemplates"> here.</a>
+                <span style={{ fontWeight: "bold" }}> Acknowledment:</span> This application was built with the react-django template of Nikita Kozlov. See more <a href="https://github.com/kozlovzxc/GIB2_prosjekt"> here.</a>
                 <span style={{ fontWeight: 'bold' }}>
                     <br />
                     NB:</span> it is possible to omit the use of pipenv as used in the article.
