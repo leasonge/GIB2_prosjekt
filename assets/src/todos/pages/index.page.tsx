@@ -5,6 +5,7 @@ import NamesList from "./components/studentList";
 // import Map from "./components/mapboxgl";
 import Footer from "./components/footer/footer";
 // import './components/index.css';
+import Header from "./components/Header/Header"
 
 
 interface Todo {
@@ -19,6 +20,7 @@ const TodosIndexPage = memo(() => {
     return (
 
         <div className="body">
+            <Header/>
             <h1>Veien til sporet</h1>
             <h2>VM i 2025</h2>
             {/* <Map /> */}
