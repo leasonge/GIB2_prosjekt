@@ -1,0 +1,82 @@
+#instructions {
+  position: absolute;
+  top: 87px; 
+  bottom: 0; 
+  width: 40%; 
+  left: 0; 
+  padding-right: 10px;
+  padding-top: 50px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  overflow: auto; 
+  background-color: white;
+  
+  /*border: 30px solid rgb(232, 231, 231); /* Grå ramme */
+
+  
+}
+
+h3 {
+  display: flex;
+  justify-content: center; /* Midtstill horisontalt */
+  align-items: center;
+  font-size: 20px;
+}
+
+.input_submit {
+  display: flex;
+  justify-content: center; /* Midtstill horisontalt */
+  align-items: center;
+}
+
+  
+#map {
+  position: absolute;
+  top: 87px;
+  bottom: 2px;
+  width: 60%;
+  left: 40%; 
+  box-sizing: border-box; 
+  
+}
+
+.travelcard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 98%;
+  height: 60px;
+  background-color: rgba(242, 240, 240, 1);
+  margin: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 40px;
+
+}
+
+
+
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden; 
+  color: black;
+}
+
+.travelFigure{
+ font-size: 20px;
+}
+
+.with-button {
+  position: relative;
+}
+
+.staricon{
+  font-size: 20px;
+  
+}

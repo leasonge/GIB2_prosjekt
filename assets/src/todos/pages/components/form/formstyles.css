@@ -1,0 +1,103 @@
+.input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+
+
+.input_box {
+    padding: 5px 5px;
+    font-size: 20px;
+}
+
+
+.locationInput {
+    display: grid;
+    grid-template-columns: auto auto; /* Two columns: one for labels, one for inputs */
+    gap: 8px; /* Add some space between elements */
+    align-items: center;
+    justify-content: center; 
+    font-size: 18px;
+}
+  
+.locationInput label {
+    justify-self: end; /* Align labels to the end of their column */
+}
+  
+.locationInput input {
+    width: 100%; /* Ensure inputs take up the remaining space */
+}
+  
+.locationInput button {
+    grid-column: 3; /* Make the button span across both columns */
+    width: 40px; /* Set the width of the button */
+    height: 25px; /* Set the height of the button */
+    font-size: 14px;
+ 
+}
+
+
+
+.departureButtons {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center; /* Plasserer elementene horisontalt sentrert */
+    align-items: center; /* Add some space between elements */
+}
+
+.departureButtons button {
+    width: 90px; /* Angi ønsket bredde */
+    height: 20px;
+    margin: 0 5px; /* Angi ønsket høyde */
+    
+}
+
+.input_submit {
+    
+    margin: 20px;
+    width: 200px;
+    height: 30px;
+    background-color: #322592;
+    color: white;
+    
+
+}
+.input_button {
+    display: flex;
+    justify-content: center; /* Plasserer elementene horisontalt sentrert */
+    align-items: center;
+}
+
+.travel_buttons{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center; /* Plasserer elementene horisontalt sentrert */
+    align-items: center;
+     /* Add some space between elements */
+    
+    
+}
+.travel_buttons button {
+    width: 130px; /* Angi ønsket bredde */
+    height: 40px;
+    margin: 0 5px; /* Angi ønsket høyde */
+    font-size: 20px;
+}
+
+.active-button {
+    background-color: #322592; /* Darker color for active button */
+    color: #fff; /* Text color for active button */
+}
+
+.selected{
+    background-color: #322592; /* Darker color for active button */
+    color: #fff; /* Text color for active button */
+}
+
+
+
+.locationInput input {
+    width: 200px; /* Angi ønsket bredde for inndatafeltet */
+    height: 30px; /* Angi ønsket høyde for inndatafeltet */
+  }
