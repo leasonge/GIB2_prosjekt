@@ -7,6 +7,7 @@ import Footer from "./components/footer/footer";
 // import './components/index.css';
 import Header from "./components/Header/Header"
 import Map6 from "./components/mapbox/Map6";
+import IndexMap from "./components/mapbox/IndexMap";
 
 
 interface Todo {
@@ -22,7 +23,7 @@ const TodosIndexPage = memo(() => {
 
         <div className="body">
             <Header/>
-            <Map6/>
+            <IndexMap/>
             {/*<h1>Veien til sporet</h1>
             <h2>VM i 2025</h2>
             <Map /> 
@@ -49,6 +50,7 @@ const TodosIndexPage = memo(() => {
             <PostButton />
             <NamesList />
             <Footer />*/}
+            
         </div>
 
     )
