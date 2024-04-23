@@ -1,8 +1,25 @@
-.body {
+/* div {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-Items: center;
   height: 700px;
   background-color: #6364D5;
+} */
+
+body{
+  min-height: 115vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+footer {
+  margin-top: auto; /* Pushes the footer to the bottom */
+  position: relative; /* Remove this line */
+  /* bottom: 0; */ /* Remove this line */
+  width: 100%; /* Make sure the footer spans the whole width */
+  background-color: #f5f5f5; /* Optional: background color for the footer */
+  padding: 10px; /* Optional: Add some padding for better appearance */
+  bottom: 0;
 }

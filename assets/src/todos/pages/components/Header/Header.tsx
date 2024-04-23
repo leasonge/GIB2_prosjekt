@@ -1,22 +1,25 @@
 import { FaSkiing } from "react-icons/fa";
-import React from "react"
-import "./headerstyles.css"
-
+import React from "react";
+import "./headerstyles.css";
+import { Link } from "react-router-dom";
 
 export default function Header() {
-    return (
-        <header className="container">
-            <nav className="nav">
-                <a href="/" className="logo" style={{ fontSize: '40px' }}><FaSkiing/>Veien til sporet</a>
-                <ul>
-                    <li>
-                        <a href="/routs">Reiseplanlegger</a>
-                    </li>
-                    <li>
-                        <a href="/favorittes">Favoritter</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    )
+  return (
+    <header className="container">
+      <nav className="nav">
+        <Link to="/" className="logo" style={{ fontSize: "40px" }}>
+          <FaSkiing />
+          Veien til sporet
+        </Link>
+        <ul>
+          <li>
+            <Link to="/reiseplanlegger">Reiseplanlegger</Link>
+          </li>
+          <li>
+            <Link to="/favoritter">Favoritter</Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
 }

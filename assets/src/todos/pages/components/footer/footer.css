@@ -15,7 +15,7 @@
   flex-wrap: wrap;
   width: 100%;
   text-align: left;
-  margin-bottom: 2rem;
+  height: 240px;
 }
 
 .sb__footer-links_div {
@@ -70,7 +70,7 @@ p {
 span {
   font-size: 30px;
 }
-
+/* 
 @media screen and (max-width: 850px) {
   .sb_footer-heading h1 {
     font-size: 34px;
@@ -106,5 +106,5 @@ span {
     font-size: 27px;
     line-height: 38px;
   }
-}
+} */
 

@@ -15,12 +15,12 @@ body { margin: 0; padding: 0; }
 }
 
 
-  #instructions {
+  #index-instructions {
   position: absolute;
   bottom: 0;
   left: 50%;
   top: 65%;
-  width: 700px;;
+  width: 700px;
   transform: translateX(-50%);
   background-color: white;
   padding: 10px;
@@ -32,8 +32,10 @@ body { margin: 0; padding: 0; }
 
 }
 
-p{
+#map_p{
     font-size: small;
+    color: black;
+    font-weight: 100;
 }
 
 
@@ -45,5 +47,7 @@ p{
     color: white;
     border-radius: 4px;
     font-size: 18px;
+    cursor: pointer;
 }
+
 

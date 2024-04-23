@@ -28,14 +28,13 @@ body {
 }
 
 .nav ul :hover {
-    background-color: white;
-    color: #322592;
-
+    text-decoration: underline;
+    color: white;
 }
-.nav ul :active {
-    background-color: white;
-    color: #322592;
 
+.nav ul :active {
+    text-decoration: underline;
+    color: white;
 }
 
 
