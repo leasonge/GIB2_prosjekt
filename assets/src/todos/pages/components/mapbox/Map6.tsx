@@ -10,12 +10,13 @@ import { FaBusSimple } from "react-icons/fa6";
 import { MdDirectionsBike } from "react-icons/md";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
+import TravelDatePicker from "../form/DatePicker";
 
 export default function Map() {
   const [tripDuration, setTripDuration] = useState<number | null>(null);
   const [tripDistance, setTripDistance] = useState<number | null>(null);
   const [selectedMethod, setSelectedMethod] = useState<"walk" | "bike" | "bus">(
-    "bike"
+    "bus"
   );
   const [methodText, setMethodText] = useState<string>("walking");
   const [closestBusStopCoordinates, setClosestBusStopCoordinates] =
@@ -166,10 +167,36 @@ export default function Map() {
   const findClosestBusStop = (start: any[]): turf.Feature<turf.Point> => {
     const busStops: turf.FeatureCollection<turf.Point> = turf.featureCollection(
       [
-        turf.point([10.312402, 63.376447]), // Granåsen
-        turf.point([10.391906, 63.430873]), // Kongens
-        turf.point([10.393635, 63.426131]), // Other bus stop coordinates
-        // Add more bus stops as needed
+        turf.point([10.393739, 63.43191]), // Dronningens Gate
+        turf.point([10.392114, 63.43119]), // Prinsens Gate P2
+        turf.point([10.400269, 63.438577]), // Hurtigbåtterminalen
+        turf.point([10.39593, 63.4033]), // Bratsbergvegen
+        turf.point([10.407245, 63.432389]), // Bakkegata
+        turf.point([10.426798, 63.437044]), // Buran
+        turf.point([10.416334, 63.427876]), // Festningata
+        turf.point([10.407573, 63.416935]), // Gløshaugen
+        turf.point([10.35368, 63.33024]), // Sandmoen E6
+        turf.point([10.444617, 63.409503]), // Voll studentby
+        turf.point([10.371848, 63.429693]), // Skansen
+        turf.point([10.367634, 63.429236]), // Ila
+        turf.point([10.37424, 63.36134]), // City Syd E6
+        turf.point([10.400111, 63.433685]), // Søndre Gate
+        turf.point([10.72972, 63.42407]), // Stav
+        turf.point([10.413494, 63.43403]), // Solsiden
+        turf.point([10.399042, 63.41174]), // Lerkendal
+        turf.point([10.419624, 63.430483]), // Gyldenløves Gate
+        turf.point([10.393375, 63.425805]), // Nidarosdomen
+        turf.point([10.404815, 63.399141]), // Nidarvoll skole
+        turf.point([10.404167, 63.420853]), // Høgskoleringen
+        turf.point([10.413246, 63.422706]), // Jonsvannsveien
+        turf.point([10.445192, 63.428598]), // Tyholtveien
+        turf.point([10.450099, 63.437218]), // Dalen Hageby
+        turf.point([10.395042, 63.420861]), // Olav ækyrres Gate
+        turf.point([10.427586, 63.422063]), // Strinda Videregående
+        turf.point([10.386658, 63.430301]), // Kongens Gate
+        turf.point([10.397803, 63.433293]), // Olav Trygvassons Gate
+        turf.point([10.394391, 63.422226]), // Studentersamfunnet
+        turf.point([10.397095, 63.416758]), //Hesthagen
       ]
     );
 
@@ -255,7 +282,8 @@ export default function Map() {
               Søk
             </button>
           </div>
-          <h3>Når vil du reise?</h3>
+          {/*<h3>Når vil du reise?</h3>
+           <TravelDatePicker /> */}
 
           <h3>Hvordan vil du reise?</h3>
           {/* Use TravelMethod component */}

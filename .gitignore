@@ -4,3 +4,4 @@ GIB2_prosjekt.iml
 
 # DB files
 db.sqlite3
+node_modules
