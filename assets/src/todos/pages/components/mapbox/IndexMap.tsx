@@ -412,9 +412,9 @@ const Map: React.FC = () => {
         style={{ width: "100%", height: "750px", top: 88 }}
       ></div>
       <div id="index-instructions">
-        <h3>Hvor vil du reise?</h3>
+        <h3>Finn din vei til sporet!</h3>
         <p id="map_p">
-          Hold over punktene i kartet for å finne navn på hotellene
+          Zoom inn og hold over punktene i kartet for å se navn på hoteller
         </p>
         <Link to="/reiseplanlegger">
           <button id="search_button">Finn reiseruter</button>

@@ -24,7 +24,7 @@ export default function Map() {
     useState<LngLatLike | null>(null);
   const [isPressed, setIsPressed] = useState(false);
 
-  const [start, setStart] = useState<any[]>([10.407518, 63.43217]); // Default start coordinates
+  const [start, setStart] = useState<any[]>([10.398753, 63.43171]); // Default start coordinates
   const [end, setEnd] = useState<any[]>([10.312402, 63.376447]); // Default end coordinates
   const [startName, setStartName] = useState<string>(""); // Add this
   const [endName, setEndName] = useState<string>(""); // And this
@@ -125,7 +125,7 @@ export default function Map() {
           },
           paint: {
             "circle-radius": 7,
-            "circle-color": "#3887be", // Color for bus stop marker
+            "circle-color": "#322592", // Color for bus stop marker
           },
         });
       } else {
@@ -156,7 +156,7 @@ export default function Map() {
         },
         paint: {
           "circle-radius": 7,
-          "circle-color": "#322592", // Color for start point marker
+          "circle-color": "#3C6835", // Color for start point marker
         },
       });
 
@@ -181,7 +181,7 @@ export default function Map() {
         },
         paint: {
           "circle-radius": 7,
-          "circle-color": "#322592", // Color for end point marker
+          "circle-color": "#D12828", // Color for end point marker
         },
       });
 
@@ -381,7 +381,7 @@ export default function Map() {
               {isPressed ? (
                 <FaStar className="staricon" color="#322592" />
               ) : (
-                <FaStar className="staricon" color="white" />
+                <FaStar className="staricon" color="#C8C8C8" />
               )}
             </div>
           </div>
