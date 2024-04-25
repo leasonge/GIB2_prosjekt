@@ -416,10 +416,8 @@ const Map: React.FC = () => {
         <p id="map_p">
           Hold over punktene i kartet for å finne navn på hotellene
         </p>
-
-        <LocationSwitcher />
         <Link to="/reiseplanlegger">
-          <button id="search_button">Se reiseruter</button>
+          <button id="search_button">Finn reiseruter</button>
         </Link>
       </div>
     </>

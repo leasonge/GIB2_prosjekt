@@ -12,33 +12,6 @@
 }
 
 
-.locationInput {
-    display: grid;
-    grid-template-columns: auto auto; /* Two columns: one for labels, one for inputs */
-    gap: 8px; /* Add some space between elements */
-    align-items: center;
-    justify-content: center; 
-    font-size: 18px;
-}
-  
-.locationInput label {
-    justify-self: end; /* Align labels to the end of their column */
-}
-  
-.locationInput input {
-    width: 100%; /* Ensure inputs take up the remaining space */
-}
-  
-.locationInput button {
-    grid-column: 3; /* Make the button span across both columns */
-    width: 40px; /* Set the width of the button */
-    height: 25px; /* Set the height of the button */
-    font-size: 14px;
- 
-}
-
-
-
 .departureButtons {
     margin-bottom: 10px;
     display: flex;
@@ -53,21 +26,8 @@
     
 }
 
-.input_submit {
-    
-    margin: 20px;
-    width: 200px;
-    height: 30px;
-    background-color: #322592;
-    color: white;
-    
 
-}
-.input_button {
-    display: flex;
-    justify-content: center; /* Plasserer elementene horisontalt sentrert */
-    align-items: center;
-}
+
 
 .travel_buttons{
     margin-bottom: 10px;
@@ -83,6 +43,7 @@
     height: 40px;
     margin: 0 5px; /* Angi ønsket høyde */
     font-size: 20px;
+    cursor: pointer;
 }
 
 .active-button {
@@ -101,3 +62,66 @@
     width: 200px; /* Angi ønsket bredde for inndatafeltet */
     height: 30px; /* Angi ønsket høyde for inndatafeltet */
   }
+
+  .locationInput {
+    display: grid;
+    grid-template-columns: auto auto auto; /* Three columns: label, input, switch button */
+    grid-template-rows: auto auto auto; /* Define three rows */
+    grid-gap: 10px; /* Space between grid items */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center grid horizontally on the page */
+    
+}
+
+.locationInput label {
+    grid-column: 1; /* All labels in the first column */
+}
+
+.locationInput div {
+    grid-column: 2; /* Input fields in the second column */
+}
+
+.locationInput .switch {
+    grid-row: 1; /* Place the switch button in the first row */
+    grid-column: 3; /* Place the switch button in the third column */
+    justify-self: center; /* Center the button in its grid cell */
+    cursor: pointer;
+}
+
+.input_submit {
+    grid-column: 1 / 4; /* Span the search button across all columns */
+    grid-row: 3; /* Place the "Søk" button in the third row */
+    justify-self: center; /* Center the button horizontally */
+    margin-top: 10px; /* Optional: add margin at the top for spacing */
+    margin: 20px;
+    width: 200px;
+    height: 30px;
+    background-color: #322592;
+    color: white;
+    cursor: pointer;
+}
+
+.hotel-dropdown {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: white;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    width: 100%; /* Ensure dropdown matches the input field width */
+    box-sizing: border-box;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.hotel-dropdown li {
+    padding: 8px;
+    cursor: pointer;
+    font-size: 0.9em; /* Small font size */
+}
+
+.hotel-dropdown li:hover {
+    background-color: #f0f0f0;
+}
+

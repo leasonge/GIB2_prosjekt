@@ -23,3 +23,41 @@ footer {
   padding: 10px; /* Optional: Add some padding for better appearance */
   bottom: 0;
 }
+
+.favorites-container {
+  width: 70%;
+  margin: 0 auto; /* Center align the container */
+  text-align: center;
+}
+
+.favorite-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(242, 240, 240, 1);
+  height: 50px;
+  font-size: medium;
+}
+
+.favorite-column {
+  flex: 1; /* Each column takes an equal amount of space */
+  padding: 0 10px;
+  text-align: center;
+}
+
+.favorite-column:nth-child(2),
+.favorite-column:nth-child(3) {
+  /* Your styles here */
+  /* For example: */
+  text-align: left;
+}
+
+.icon {
+  text-align: center;
+}
+
+
+

@@ -20,7 +20,8 @@ body { margin: 0; padding: 0; }
   bottom: 0;
   left: 50%;
   top: 65%;
-  width: 700px;
+  width:40%;
+  height: 25%;
   transform: translateX(-50%);
   background-color: white;
   padding: 10px;
@@ -36,6 +37,7 @@ body { margin: 0; padding: 0; }
     font-size: small;
     color: black;
     font-weight: 100;
+    align-items: center;
 }
 
 
@@ -45,8 +47,8 @@ body { margin: 0; padding: 0; }
     height: 30px;
     background-color: #322592;
     color: white;
-    border-radius: 4px;
-    font-size: 18px;
+    border-radius: 2px;
+    font-size: 15px;
     cursor: pointer;
 }
 

@@ -11,6 +11,7 @@ import { MdDirectionsBike } from "react-icons/md";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import TravelDatePicker from "../form/DatePicker";
+import LocationSwitcher2 from "../form/LocationSwitcher2";
 
 export default function Map() {
   const [tripDuration, setTripDuration] = useState<number | null>(null);
@@ -22,8 +23,46 @@ export default function Map() {
   const [closestBusStopCoordinates, setClosestBusStopCoordinates] =
     useState<LngLatLike | null>(null);
   const [isPressed, setIsPressed] = useState(false);
+
+  const [start, setStart] = useState<any[]>([10.407518, 63.43217]); // Default start coordinates
+  const [end, setEnd] = useState<any[]>([10.312402, 63.376447]); // Default end coordinates
+  const [startName, setStartName] = useState<string>(""); // Add this
+  const [endName, setEndName] = useState<string>(""); // And this
+
   const handleButtonClick = () => {
-    setIsPressed(!isPressed);
+    setIsPressed((prevState) => !prevState);
+
+    // Save data to local storage
+    const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+    console.log("Current favorites before update:", favorites);
+
+    if (!isPressed) {
+      // Add to favorites
+      favorites.push({ startName, endName, selectedMethod });
+      console.log("Added to favorites:", {
+        startName,
+        endName,
+        selectedMethod,
+      });
+    } else {
+      // Remove from favorites
+      const index = favorites.findIndex(
+        (fav) =>
+          fav.startName === startName &&
+          fav.endName === endName &&
+          fav.selectedMethod === selectedMethod
+      );
+      if (index !== -1) {
+        favorites.splice(index, 1);
+        console.log("Removed from favorites:", {
+          startName,
+          endName,
+          selectedMethod,
+        });
+      }
+    }
+
+    localStorage.setItem("favorites", JSON.stringify(favorites));
   };
 
   useEffect(() => {
@@ -33,12 +72,9 @@ export default function Map() {
     const map = new mapboxgl.Map({
       container: "map", // container ID
       style: "mapbox://styles/mapbox/streets-v11", // replace with your preferred style
-      center: [10.391679, 63.405329], // starting position [lng, lat]
+      center: [10.39032, 63.41212], // starting position [lng, lat]
       zoom: 11, // starting zoom
     });
-
-    const start: any[] = [10.407518, 63.43217]; // Assuming start coordinates
-    const end: any[] = [10.312402, 63.376447];
 
     async function initializeMap() {
       let walkingRoute, drivingRoute;
@@ -162,7 +198,7 @@ export default function Map() {
     map.on("load", initializeMap);
 
     return () => map.remove();
-  }, [selectedMethod, methodText]);
+  }, [selectedMethod, methodText, start, end]);
 
   const findClosestBusStop = (start: any[]): turf.Feature<turf.Point> => {
     const busStops: turf.FeatureCollection<turf.Point> = turf.featureCollection(
@@ -270,18 +306,25 @@ export default function Map() {
     }
   };
 
+  const handleSearch = (
+    fromLocation: string,
+    toLocation: string,
+    fromCoordinates: any[],
+    toCoordinates: any[]
+  ) => {
+    setStartName(fromLocation); // Assumes you have state for these, or directly use setStart, setEnd
+    setEndName(toLocation);
+    setStart(fromCoordinates);
+    setEnd(toCoordinates);
+  };
+
   return (
     <>
       <div className="container">
         <div id="instructions">
           <h3 className="heading">Hvor vil du reise?</h3>
-          <LocationSwitcher />
+          <LocationSwitcher2 onSearch={handleSearch} />
 
-          <div className="input_button">
-            <button className="input_submit" type="submit">
-              Søk
-            </button>
-          </div>
           {/*<h3>Når vil du reise?</h3>
            <TravelDatePicker /> */}
 
@@ -336,9 +379,9 @@ export default function Map() {
               onClick={handleButtonClick}
             >
               {isPressed ? (
-                <FaStar className="staricon" color="white" />
-              ) : (
                 <FaStar className="staricon" color="#322592" />
+              ) : (
+                <FaStar className="staricon" color="white" />
               )}
             </div>
           </div>
