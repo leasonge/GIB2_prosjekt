@@ -1,5 +1,6 @@
-import { FaSkiing } from "react-icons/fa";
+//import { FaSkiing } from "react-icons/fa";
 import React from "react"
+import { FaSkiing } from "react-icons/fa"
 import "./headerstyles.css"
 
 

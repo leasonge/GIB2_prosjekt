@@ -35,9 +35,13 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django.contrib.gis",
     "rest_framework",
+    "rest_framework_gis",
     "corsheaders",
     "todos",
+    
+    
 ]
 
 MIDDLEWARE = [
@@ -57,6 +61,26 @@ CORS_ALLOW_ALL_ORIGINS = False
 
 ROOT_URLCONF = "GIB2_prosjekt.urls"
 
+#possible_gdal_paths =["/opt/homebrew/Cellar/gdal/3.8.5_1/lib/libgdal.34.3.8.5.dylib", #Malene, Lea og Emma
+ #            "/usr/lib/libgdal.so", #Server
+ #            "C:/OSGeo4W/bin/gdal308.dll" #Åsne
+#]
+#GDAL_LIBRARY_PATH = "/opt/homebrew/Cellar/gdal/3.8.5_1/lib/libgdal.34.3.8.5.dylib"
+GDAL_LIBRARY_PATH = '/opt/homebrew/lib/libgdal.dylib'
+
+#for path in possible_gdal_paths:
+#    if Path(path).exists():
+ #       GDAL_LIBRARY_PATH = path
+ #       break
+
+possible_geos_paths=["/opt/homebrew/Cellar/geos/3.12.1/lib/libgeos_c.dylib",#Malene, Lea og Emma
+           "C:/OSGeo4W/bin/geos.dll"] #Åsne
+GEOS_LIBRARY_PATH = None
+for path in possible_geos_paths:
+    if Path(path).exists():
+        GEOS_LIBRARY_PATH = path
+        break
+
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
@@ -71,7 +95,7 @@ TEMPLATES = [
             ],
         },
     },
-]
+    ]
 
 WSGI_APPLICATION = "GIB2_prosjekt.wsgi.application"
 
@@ -80,8 +104,8 @@ WSGI_APPLICATION = "GIB2_prosjekt.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "even_studass",  # your database name
+        "ENGINE": "django.contrib.gis.db.backends.postgis",
+        "NAME": "veien_til_sporet",  # your database name
         "USER": "postgres",  # your database username
         "PASSWORD": "postgres",  # your database password
         "HOST": "geomatikk.ibm.ntnu.no",  # your database host

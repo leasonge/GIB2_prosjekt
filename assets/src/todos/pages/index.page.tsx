@@ -23,7 +23,7 @@ const TodosIndexPage = memo(() => {
 
         <div className="body">
             <Header/>
-            <IndexMap/>
+            <Map6/>
             {/*<h1>Veien til sporet</h1>
             <h2>VM i 2025</h2>
             <Map /> 
