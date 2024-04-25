@@ -46,7 +46,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 98%;
-  height: 60px;
+  height: fit-content;
   background-color: rgba(242, 240, 240, 1);
   margin: 10px;
   border-radius: 10px;

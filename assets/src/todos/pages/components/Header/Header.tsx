@@ -8,8 +8,8 @@ export default function Header() {
     <header className="container">
       <nav className="nav">
         <Link to="/" className="logo" style={{ fontSize: "40px" }}>
-          <FaSkiing />
-          Veien til sporet
+          <FaSkiing className="logo-icon" />
+          <span className="logo-text"> Veien til sporet</span>
         </Link>
         <ul>
           <li>

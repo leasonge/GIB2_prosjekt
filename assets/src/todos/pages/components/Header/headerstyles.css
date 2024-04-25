@@ -17,6 +17,7 @@ body {
     align-items: center;
     gap: 2rem;
     padding: 1rem;
+    height: 88px;
 }
 
 .nav ul {
@@ -46,4 +47,16 @@ body {
     align-items: center;
     padding: .25rem;
     font-size: 25px;
+}
+
+.logo-text {
+    font-size: 40px;
+}
+
+
+@media (max-width: 768px) {
+    .logo-text {
+      display: none; /* Hide the text when the screen is smaller */
+    }
+
 }

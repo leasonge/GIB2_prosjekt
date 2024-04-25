@@ -8,7 +8,7 @@
 } */
 
 body{
-  min-height: 115vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 
@@ -35,10 +35,10 @@ footer {
   justify-content: space-between;
   align-items: center;
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px;
   margin-bottom: 10px;
   background-color: rgba(242, 240, 240, 1);
-  height: 50px;
+  height: fit-content;
   font-size: medium;
 }
 
@@ -48,8 +48,7 @@ footer {
   text-align: center;
 }
 
-.favorite-column:nth-child(2),
-.favorite-column:nth-child(3) {
+.favorite-column:nth-child(2) {
   /* Your styles here */
   /* For example: */
   text-align: left;
@@ -58,6 +57,5 @@ footer {
 .icon {
   text-align: center;
 }
-
 
 

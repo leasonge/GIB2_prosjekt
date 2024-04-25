@@ -54,7 +54,7 @@ export const FavoritePage = () => {
 
   return (
     <div className="favorites-container">
-      <h1 className="title">Favoritt ruter</h1>
+      <h1 className="title">Favoritter</h1>
       {favorites.map((fav, index) => (
         <div className="favorite-card" key={index}>
           <div className="favorite-column">
@@ -68,10 +68,10 @@ export const FavoritePage = () => {
               <FaBusSimple />
             )}
           </div>
-          <div className="favorite-column">Til: {fav.endName || "Unknown"}</div>
           <div className="favorite-column">
             Fra: {fav.startName || "Unknown"}
           </div>
+          <div className="favorite-column">Til: {fav.endName || "Unknown"}</div>
 
           <div className="favorite-column icon">
             <FaStar

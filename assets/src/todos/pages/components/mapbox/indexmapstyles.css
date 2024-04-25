@@ -21,7 +21,7 @@ body { margin: 0; padding: 0; }
   left: 50%;
   top: 65%;
   width:40%;
-  height: 25%;
+  height: fit-content;
   transform: translateX(-50%);
   background-color: white;
   padding: 10px;
@@ -53,3 +53,9 @@ body { margin: 0; padding: 0; }
 }
 
 
+@media (max-width: 768px) {
+
+#search_button{
+    width: 180px;
+}
+}
