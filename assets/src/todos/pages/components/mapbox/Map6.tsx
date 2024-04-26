@@ -233,6 +233,7 @@ export default function Map() {
         turf.point([10.397803, 63.433293]), // Olav Trygvassons Gate
         turf.point([10.394391, 63.422226]), // Studentersamfunnet
         turf.point([10.397095, 63.416758]), //Hesthagen
+        turf.point([10.316986, 63.378816]), //Granåsen
       ]
     );
 
